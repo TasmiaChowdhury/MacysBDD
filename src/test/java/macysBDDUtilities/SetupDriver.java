@@ -2,7 +2,7 @@ package macysBDDUtilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -14,10 +14,10 @@ public class SetupDriver {
 		driver = new ChromeDriver();
 	}
 
-	public static void setupFirefoxDriver() {
+	/*public static void setupFirefoxDriver() {
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
-	}
+	}*/
 
 	public static WebDriver getDriver() {
 		return driver;
