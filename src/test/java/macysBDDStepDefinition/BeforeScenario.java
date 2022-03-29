@@ -20,7 +20,7 @@ public class BeforeScenario {
 
 	}
 
-	/*@Before("@firefox")
+	@Before("@firefox")
 	public void beforeFirefoxScenario(Scenario scen) {
 
 		System.out.println(">> Started Chrome Driver Initialization <<");
@@ -33,7 +33,7 @@ public class BeforeScenario {
 			System.out.println(">> FirefoxDriver Initialization Failed!!<<");
 		}
 
-	}*/
+	}
 
 
 }

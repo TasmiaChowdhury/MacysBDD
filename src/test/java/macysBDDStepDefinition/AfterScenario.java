@@ -24,9 +24,12 @@ public class AfterScenario {
 			e.printStackTrace();
 		}
 
+		
 		SetupDriver.tearDownDriver();
 		
-		System.out.println(">> Driver Closed! <<");
+		 System.out.println(">> Driver Closed! <<");
+		 
+		 
 
 	}
 
