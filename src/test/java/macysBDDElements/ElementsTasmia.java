@@ -15,6 +15,9 @@ public class ElementsTasmia {
 	@FindBy(xpath="//input[@id='sign-in']")
 	public WebElement clickSubmit;
 	
+	@FindBy(xpath="//div[@class='fixed-container notification-error']")
+	public WebElement errorMsg;
+	
 	@FindBy (xpath="//input[@id='globalSearchInputField']")
 	public WebElement searchBox;
 	
@@ -22,11 +25,12 @@ public class ElementsTasmia {
 	public WebElement mensShirt;
 	 
 	
-	@FindBy(xpath="//li[@id='flexid_118']")            //or "//span[normalize-space()='Women']"
+	@FindBy(xpath="//span[normalize-space()='Women']")            //or "//span[normalize-space()='Women']"// or //li[@id='flexid_118']
 	public WebElement hoverovertowomen;
 	
-	@FindBy(xpath="//div[@aria-label='Women']//div[1]//div[1]//a[6]")
+	@FindBy(xpath="//li[@class='header highlighted']//a[contains(text(),'Extra 30% Off')]")
 	public WebElement clickonDressess;
+	
 	
 	@FindBy(xpath="//img[@id='img_5922629']")
 	public WebElement selectDress;
@@ -43,11 +47,8 @@ public class ElementsTasmia {
 	@FindBy (xpath="//*[@id=\"atbIntViewBagAndCheckout\"]")
 	public WebElement ViewBag;
 	
-	@FindBy (xpath="(//a[contains(text(),'Toys')])[3]")
-	public WebElement toys;
-	
-	@FindBy(xpath="//a[normalize-space()='LEGO Sets & Packs']")
-	public WebElement lego;
+	@FindBy(xpath="//*[@id=\"servicError\"]/button")
+	public WebElement serviceerror;                                 // may appear sometimes 
 	
 	
 	

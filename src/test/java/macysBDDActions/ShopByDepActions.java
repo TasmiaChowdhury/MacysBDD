@@ -34,6 +34,7 @@ public class ShopByDepActions {
 		try {
 			Actions hover = new Actions(SetupDriver.driver);
 			hover.moveToElement(element.hoverovertowomen).perform();
+			//element.hoverovertowomen.click();
 		} catch (Exception e) {
 			e.getStackTrace();
 

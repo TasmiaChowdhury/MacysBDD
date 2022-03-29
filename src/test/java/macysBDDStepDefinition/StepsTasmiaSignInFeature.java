@@ -17,14 +17,16 @@ public class StepsTasmiaSignInFeature {
 		action.openMacysSignin();	
 	}
 
-	@When("User enters a valid email address")
+	@When("User enters a invalid email address")
 	public void user_enters_a_valid_email_address() throws InterruptedException {
+		action.clearEmailID();
 		action.inputEmail();
 		System.out.println("Calling input email method");
 	}
 
 	@And("User enters a Valid password")
 	public void user_enters_a_Valid_password() {
+		action.clearPassword();
 		action.inputPass();
 		System.out.println("calling input password method ");
 	}
@@ -35,10 +37,16 @@ public class StepsTasmiaSignInFeature {
 
 	}
 	
-	@Then("User should be nevigated to Macys homepage")
-	public void user_should_be_nevigated_to_Macys_homepage() {
+	@Then("User should not be nevigated to Macys homepage")
+	public void user_shouldnot_be_nevigated_to_Macys_homepage() {
 		Assert.assertEquals(Helper.getCurentUrl(), "https://www.macys.com/account/signin");
-		action.errormessage();
+		
+	}
+	
+	@Then("User  should receive an error message")
+	public void user_should_receive_an_error_message() {
+		boolean actual = action.errormessage();
+		Assert.assertEquals(actual, true);
 	}
 
 

@@ -30,6 +30,7 @@ public class Search_actions {
 		SetupDriver.driver.get("https://www.macys.com/");
 		SetupDriver.driver.manage().window().maximize();
 		SetupDriver.driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+		SetupDriver.driver.manage().deleteAllCookies();
 		System.out.println("chrome opened for searching item ==>");
 	}
 	
