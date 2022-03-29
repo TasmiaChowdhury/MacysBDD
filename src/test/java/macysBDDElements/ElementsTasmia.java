@@ -1,5 +1,6 @@
 package macysBDDElements;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -21,11 +22,11 @@ public class ElementsTasmia {
 	public WebElement mensShirt;
 	 
 	
-	@FindBy(xpath="//span[normalize-space()='Women']")
-	public WebElement women;
+	@FindBy(xpath="//li[@id='flexid_118']")            //or "//span[normalize-space()='Women']"
+	public WebElement hoverovertowomen;
 	
-	@FindBy(xpath="(//a[contains(text(),'Dresses')])[1]")
-	public WebElement HoverOvertoDress;
+	@FindBy(xpath="//div[@aria-label='Women']//div[1]//div[1]//a[6]")
+	public WebElement clickonDressess;
 	
 	@FindBy(xpath="//img[@id='img_5922629']")
 	public WebElement selectDress;
@@ -41,6 +42,14 @@ public class ElementsTasmia {
 	
 	@FindBy (xpath="//*[@id=\"atbIntViewBagAndCheckout\"]")
 	public WebElement ViewBag;
+	
+	@FindBy (xpath="(//a[contains(text(),'Toys')])[3]")
+	public WebElement toys;
+	
+	@FindBy(xpath="//a[normalize-space()='LEGO Sets & Packs']")
+	public WebElement lego;
+	
+	
 	
 
 }
