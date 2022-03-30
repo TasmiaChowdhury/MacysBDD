@@ -18,5 +18,8 @@ public class HomePageElements {
 	
 	@FindBy(xpath="//*[@id=\"servicError\"]/button")         //*[@id="servicError"]/button
 	public WebElement serviceerror;
+	
+	@FindBy (xpath="//*[@id=\"footer-redesign-row-1-panels-container\"]/div[3]/label/ul/li[4]/a")
+	public WebElement hoursAndLocation;
 
 }
