@@ -6,17 +6,17 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 
-import macysBDDElements.ElementsTasmia;
+import macysBDDElements.SignInPage_elements;
 import macysBDDUtilities.SetupDriver;
 
 
 
-public class ActionsTasmia {
+public class SignIn_actions {
 	
-	ElementsTasmia elementTas;
+	SignInPage_elements elementTas;
 		
-	public ActionsTasmia(){
-		elementTas = new ElementsTasmia();
+	public SignIn_actions(){
+		elementTas = new SignInPage_elements();
 		PageFactory.initElements(SetupDriver.driver, elementTas);
 	
 	}

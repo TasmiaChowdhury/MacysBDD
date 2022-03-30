@@ -39,14 +39,13 @@ public class SaleClearance_action {
 
 	public void systemerror() {
 		element.serviceerror.click();
-		System.out.println();
+		System.out.println("temporary error!!");
 
 	}
 
 	public void dropdown() {
 		try {
 			Select dropdown = new Select(element.dropdown);
-			// dropdown.selectByValue("Database");
 			dropdown.selectByVisibleText("New Arrivals");
 			element.dropdown.click();
 			element.serviceerror.click();

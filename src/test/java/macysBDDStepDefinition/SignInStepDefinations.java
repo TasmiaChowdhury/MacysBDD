@@ -5,12 +5,12 @@ import org.testng.Assert;
 
 
 import io.cucumber.java.en.*;
-import macysBDDActions.ActionsTasmia;
+import macysBDDActions.SignIn_actions;
 import macysBDDUtilities.Helper;
 
-public class StepsTasmiaSignInFeature {
+public class SignInStepDefinations {
 	
-	ActionsTasmia action = new ActionsTasmia();
+	SignIn_actions action = new SignIn_actions();
 
 	@Given("User is on Macys sign is page")
 	public void user_is_on_Macys_sign_is_page() {

@@ -10,17 +10,17 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import macysBDDElements.ElementsTasmia;
+import macysBDDElements.SignInPage_elements;
 import macysBDDUtilities.Helper;
 import macysBDDUtilities.SetupDriver;;
 
 
 public class Search_actions {
 	
-	ElementsTasmia elementTas;
+	SignInPage_elements elementTas;
 	
 	public Search_actions(){
-		elementTas = new ElementsTasmia();
+		elementTas = new SignInPage_elements();
 		PageFactory.initElements(SetupDriver.driver, elementTas);
 	}
 	

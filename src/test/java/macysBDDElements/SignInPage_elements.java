@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ElementsTasmia {
+public class SignInPage_elements {
 	
 	@FindBy(xpath = "//input[@id='email']")
 	public WebElement emailId;

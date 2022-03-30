@@ -8,15 +8,15 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import macysBDDElements.ElementsTasmia;
+import macysBDDElements.SignInPage_elements;
 import macysBDDUtilities.Helper;
 import macysBDDUtilities.SetupDriver;
 
 public class ShopByDepActions {
-	ElementsTasmia element;
+	SignInPage_elements element;
 
 	public ShopByDepActions() {
-		element = new ElementsTasmia();
+		element = new SignInPage_elements();
 		PageFactory.initElements(SetupDriver.driver, element);
 	}
 
