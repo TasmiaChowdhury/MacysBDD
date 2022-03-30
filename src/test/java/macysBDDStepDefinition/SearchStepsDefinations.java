@@ -32,7 +32,6 @@ public class SearchStepsDefinations {
 
 	@Then("User is navigated to search result {string}")
 	public void user_is_navigated_to_search_result(String string) {
-		//String actual= Helper.getPageTitle();
 		
 		String actualTitle = Helper.getPageTitle();
 		String expectedTitle = "Men's shirt";
@@ -42,7 +41,6 @@ public class SearchStepsDefinations {
 	}
 
 	private void assertEquals(String expectedTitle, String actualTitle) {
-		// TODO Auto-generated method stub
 		
 	}
 

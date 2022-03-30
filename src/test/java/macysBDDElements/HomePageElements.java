@@ -13,10 +13,10 @@ public class HomePageElements {
 	@FindBy(xpath="//li[@id='PRICE_DISCOUNT_RANGE']//li[1]//a[1]") //*[@id="SPECIAL_OFFERS"]/div/ul/li[1]/a/span[2]
 	public WebElement salesPercent;
 	
-	@FindBy (xpath="//select[@id='sortBy']")
+	@FindBy (xpath="//select[@id='sortBy' and @title='sortBy']")
 	public WebElement dropdown;
 	
-	@FindBy(xpath="//*[@id=\"quickview-error-overlay-content\"]/div[1]/a")         //*[@id="servicError"]/button
+	@FindBy(xpath="//*[@id=\"servicError\"]/button")         //*[@id="servicError"]/button
 	public WebElement serviceerror;
 
 }

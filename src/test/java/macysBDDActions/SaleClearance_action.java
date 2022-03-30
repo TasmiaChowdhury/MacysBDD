@@ -10,13 +10,14 @@ import macysBDDElements.HomePageElements;
 import macysBDDUtilities.SetupDriver;
 
 public class SaleClearance_action {
-	
+
 	HomePageElements element;
-	
-	public SaleClearance_action(){
+
+	public SaleClearance_action() {
 		element = new HomePageElements();
 		PageFactory.initElements(SetupDriver.driver, element);
 	}
+
 	public void openMacysSignin() {
 		SetupDriver.driver.get("https://www.macys.com");
 		SetupDriver.driver.manage().window().maximize();
@@ -24,25 +25,34 @@ public class SaleClearance_action {
 		SetupDriver.driver.manage().deleteAllCookies();
 		System.out.println("chrome opened ==>");
 	}
-	public void clickSales(){
-		
-		//Actions hover = new Actions(SetupDriver.driver);
-		//hover.moveToElement(element.sales).perform();
+
+	public void clickSales() {
+
+		// Actions hover = new Actions(SetupDriver.driver);
+		// hover.moveToElement(element.sales).perform();
 		element.sales.click();
-		
+
 	}
-	public void expandsale(){
-		element.clearance.click();
-	}
-	
-	public void systemerror(){
+	// public void expandsale(){
+	// element.clearance.click();
+	// }
+
+	public void systemerror() {
 		element.serviceerror.click();
-		
+		System.out.println();
+
 	}
-	public void dropdown(){
-		Select dropdown = new Select(element.dropdown);  
-		//dropdown.selectByValue("Database");
-		dropdown.selectByVisibleText("New Arrivals");  
-		element.dropdown.click();
+
+	public void dropdown() {
+		try {
+			Select dropdown = new Select(element.dropdown);
+			// dropdown.selectByValue("Database");
+			dropdown.selectByVisibleText("New Arrivals");
+			element.dropdown.click();
+			element.serviceerror.click();
+		} catch (Exception e) {
+			e.getStackTrace();
+			System.out.println("Temporary server error !!");
+		}
 	}
 }
