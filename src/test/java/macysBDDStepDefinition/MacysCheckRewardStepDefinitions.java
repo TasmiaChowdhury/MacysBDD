@@ -8,7 +8,7 @@ public class MacysCheckRewardStepDefinitions {
 	
 	@Given("On Macy’s login page")
 	public void on_Macy_s_login_page() {
-	    System.out.println(" ");
+	    System.out.println("Teri ");
 	}
 
 	@When("User vaild inputs userid {string}")
