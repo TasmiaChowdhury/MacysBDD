@@ -2,14 +2,14 @@ package macysBDDActions;
 
 import org.openqa.selenium.support.PageFactory;
 
-import macysBDDElements.Elements_Rubyat;
+import macysBDDElements.Registration__Elements;
 import macysBDDUtilities.SetupDriver;
 
 public class Brands_Action {
-	Elements_Rubyat Ruby_elements;
+	Registration__Elements Ruby_elements;
 
 	public Brands_Action() {
-		Ruby_elements = new Elements_Rubyat();
+		Ruby_elements = new Registration__Elements();
 
 		PageFactory.initElements(SetupDriver.driver, Ruby_elements);
 
@@ -18,33 +18,35 @@ public class Brands_Action {
 	public void get_page() {
 		SetupDriver.driver.get("https://www.macys.com/shop/handbags-accessories?id=26846");
 		SetupDriver.driver.manage().window().maximize();
-		// SetupDriver.driver.manage().deleteAllCookies();
+		SetupDriver.driver.manage().deleteAllCookies();
 
 	}
 
 	public void click_brands() {
 		Ruby_elements.brand_expnd.click();
-		// SetupDriver.driver.manage().deleteAllCookies();
+		SetupDriver.driver.manage().deleteAllCookies();
 	}
 
 	public void click_guess() {
-
-		Ruby_elements.Guess.click();
-		// SetupDriver.driver.manage().deleteAllCookies();
+		try {
+			Ruby_elements.Guess.click();
+			SetupDriver.driver.manage().deleteAllCookies();
+		}catch(Exception e) {
+			SetupDriver.driver.get("https://www.macys.com/shop/handbags-accessories/guess?id=35848&edge=hybrid");
+			SetupDriver.driver.manage().window().maximize();
+			SetupDriver.driver.manage().deleteAllCookies();
+	}
 	}
 
 	public void Click_product() {
+		try {
 		Ruby_elements.product.click();
+		SetupDriver.driver.manage().deleteAllCookies();
+	}catch(Exception e) {
+		SetupDriver.driver.get("https://www.macys.com/shop/product/guess-gillian-mini-flap-crossbody?ID=13264284&CategoryID=35848&swatchColor=Black");
+		SetupDriver.driver.manage().deleteAllCookies();
 	}
-	public void Click_color() {
-		Ruby_elements.color.click();
-	}
-	public void Click_addBag() {
-		Ruby_elements.add_Bag.click();
 	}
 	
-	public void Click_Checkout() {
-		Ruby_elements.checkout.click();
-	}
-
+	
 }

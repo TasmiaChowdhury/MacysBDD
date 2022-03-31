@@ -2,23 +2,18 @@ package macysBDDActions;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import macysBDDElements.Elements_Rubyat;
+import macysBDDElements.Registration__Elements;
 import macysBDDUtilities.SetupDriver;
 
 public class Reg_Macys_actions {
 
-	Elements_Rubyat Ruby_elements;
+	Registration__Elements Ruby_elements;
 
 	public Reg_Macys_actions() {
-		Ruby_elements = new Elements_Rubyat();
+		Ruby_elements = new Registration__Elements();
 		PageFactory.initElements(SetupDriver.driver, Ruby_elements);
 
 	}

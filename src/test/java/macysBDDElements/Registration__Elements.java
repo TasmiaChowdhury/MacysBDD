@@ -3,7 +3,7 @@ package macysBDDElements;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Elements_Rubyat {
+public class Registration__Elements {
 	
 	@FindBy(xpath = "//*[@id=\"ca-profile-firstname\"]")
 	public WebElement FirstName;
@@ -31,25 +31,21 @@ public class Elements_Rubyat {
 	public WebElement error;
 	
 	
-	/*@FindBy(xpath ="//div[normalize-space()='Brands']")
-	/public WebElement brand_expnd;*/
+    
 	
-	@FindBy(xpath ="//*[@id=\"categoryTree\"]/ul/li[4]/div[2]/h5/div[2]")
+	@FindBy(xpath ="//*[@id=\"categoryTree\"]/ul/li[3]/div[2]/h5/div[1]")
 	public WebElement brand_expnd;
 	
-	//*[@id="categoryTree"]/ul/li[4]/div[2]/h5/div[2]
 	
-	@FindBy(xpath= "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[4]/div[2]/div[1]/div[1]/ul[1]/li[7]/a[1]")
+	
+	@FindBy(xpath= "//li[@class='children']//a[contains(text(),'GUESS')]")
 	public WebElement Guess;
 	
-	//*[@id="categoryTree"]/ul/li[4]/div[2]/div/div/ul/li[7]/a
 	
-	@FindBy(xpath="//div[@class='productDescription']//a[contains(@title,'Gillian Mini Flap Crossbody')]")
+	@FindBy(xpath="//*[@id=\"13264284\"]/div[3]/div[2]/a")
 	public WebElement product ;
-	//*[@id="13264284"]/div[3]/div[2]/a      for product as 
-	//div[@class='productDescription']//a[contains(@title,'Gillian Mini Flap Crossbody')] for product 
 	
-	@FindBy(xpath="//*[@id=\"mcom-a11y-7099396\"]")
+	@FindBy(xpath="//*[@id=\"mainCont\"]/div[2]/div[2]/div/div/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/div/div/div/div[2]/div[2]/div/div[1]/ul/li[2]")
 	public WebElement color ;
 	
 	@FindBy(xpath="//*[@id=\"bag-add-13264284\"]")
@@ -58,6 +54,15 @@ public class Elements_Rubyat {
 	@FindBy(xpath="//*[@id=\"atbIntCheckout\"]")
 	public WebElement checkout ;
 	
+	
+	@FindBy(xpath="//*[@id=\"mainCont\"]/div[2]/div[2]/div/div/div[1]/div/div[2]/div/div[2]/div/div[1]/div[4]/div/div/div[2]/table/tbody/tr/td/span/div/div/div[2]/table/tbody/tr/td/a/span[2]/span[1]")
+	public WebElement reccomend;
+	
+	@FindBy(xpath="//span[@class='tfc-if-shopping-for-self']")
+	public WebElement Continue;
+	
+	@FindBy(id="atbIntViewBagAndCheckout")
+	public WebElement alertViewBag;
 	
 	
 	
