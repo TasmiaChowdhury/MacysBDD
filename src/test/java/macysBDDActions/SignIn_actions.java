@@ -35,7 +35,7 @@ public class SignIn_actions {
 	public void inputEmail(){
 		//elementTas.emailId.sendKeys("TestEMail@gmail.com");
 		System.out.println("Passing email ==>");
-		elementTas.emailId.sendKeys("Galaxy@gmail.com");
+		elementTas.emailId.sendKeys("TeamGalaxy@gmail.com");
 	}
 	public void clearPassword() {
 		elementTas.password.clear();
@@ -43,20 +43,19 @@ public class SignIn_actions {
 	
 	
 	public void inputPass(){
-//		Set_Drivers.driver.findElement(By.xpath("//input[@id='pw-input']")).sendKeys("Galaxy2022!");
-		//elementTas.password.sendKeys("hello123");
+
 		System.out.println("Passing password ==>");
-		elementTas.password.sendKeys("hello123");
+		elementTas.password.sendKeys("Test123");
 	}
 	public void clickSignin(){
 		System.out.println("clicked on sign in button ==>");
-		//SetupDriver.driver.findElement(By.xpath("//input[@id='sign-in']")).click();
+		
 		elementTas.clickSubmit.click();
 	}
 	
 	public boolean errormessage(){
 		System.out.println("output signin/error ==>");
-		//String s = Set_Drivers.driver.findElement(By.xpath("//p[@class='notification-body']")).getText();
+		
 		//System.out.println("unable to login for system issue: " + s);
 		
 		boolean bool = false;

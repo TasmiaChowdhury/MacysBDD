@@ -17,11 +17,11 @@ import macysBDDUtilities.SetupDriver;;
 
 public class Search_actions {
 	
-	SignInPage_elements elementTas;
+	SignInPage_elements element;
 	
 	public Search_actions(){
-		elementTas = new SignInPage_elements();
-		PageFactory.initElements(SetupDriver.driver, elementTas);
+		element = new SignInPage_elements();
+		PageFactory.initElements(SetupDriver.driver, element);
 	}
 	
 	
@@ -35,15 +35,16 @@ public class Search_actions {
 	}
 	
 	public void searchItem(){
-		elementTas.searchBox.clear();
-		elementTas.searchBox.sendKeys("Men's Shirts");
+		element.searchBox.clear();
+		element.searchBox.sendKeys("Men's Shirts");
+		//element.serviceerror.click();
 		
 		
 	}
 	
 	public void clickSearch(){
-		elementTas.searchBox.sendKeys(Keys.ENTER);    
-		
+		element.searchBox.sendKeys(Keys.ENTER);    
+		//element.serviceerror.click();
 		
 		
 	}

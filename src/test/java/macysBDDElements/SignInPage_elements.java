@@ -25,14 +25,14 @@ public class SignInPage_elements {
 	public WebElement mensShirt;
 	 
 	
-	@FindBy(xpath="//span[normalize-space()='Women']")            //or "//span[normalize-space()='Women']"// or //li[@id='flexid_118']
+	@FindBy(xpath="//button[@aria-label='Open Women flyout' and @class=\"show-for-sr\"]")           //span[normalize-space()='Women']
 	public WebElement hoverovertowomen;
 	
-	@FindBy(xpath="//li[@class='header highlighted']//a[contains(text(),'Extra 30% Off')]")
+	@FindBy(xpath="//img[@alt='Tops' and @class=\"img-adaptive stretch lazy loading\"]")
 	public WebElement clickonDressess;
 	
 	
-	@FindBy(xpath="//img[@id='img_5922629']")
+	@FindBy(xpath="//*[@id=\"74714\"]/div[2]/div/a/div[2]")
 	public WebElement selectDress;
 	
 	@FindBy(xpath="//img[@alt='Indigo']")
@@ -50,6 +50,11 @@ public class SignInPage_elements {
 	@FindBy(xpath="//*[@id=\"servicError\"]/button")
 	public WebElement serviceerror;                                 // may appear sometimes 
 	
+	@FindBy(xpath="//*[@id=\"onetrust-close-btn-container\"]/button")
+	public WebElement cookies;
+	
+	@FindBy (xpath="//*[@id=\"cta-notification-order-panel-1622049\"]/div/div/div[2]/button")
+	public WebElement technicalError;
 	
 	
 

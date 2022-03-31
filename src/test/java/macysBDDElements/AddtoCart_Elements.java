@@ -10,16 +10,16 @@ public class AddtoCart_Elements {
 	@FindBy(xpath="//*[@id=\"sortBy\"]")
 	public WebElement dropdown;
 	
-	@FindBy(xpath="//*[@id=\"1622049\"]/div[4]/div[2]/a") //*[@id="1797457"]/div[4]/div[2]/a 
+	@FindBy(xpath="//div[@class='productDescription']//a[contains(@title,\"Women's Gayle Pumps\")]") //*[@id="1797457"]/div[4]/div[2]/a 
 	public WebElement selectedShoe;
 	
-	@FindBy (xpath="//*[@id=\"mcom-a11y-6752448\"]/picture/img")
+	@FindBy (xpath="//img[@alt='Nude']")
 	public WebElement color;
 	
-	@FindBy (xpath="//*[@id=\"mainCont\"]/div[2]/div[2]/div/div/div[1]/div/div[2]/div/div[2]/div/div[1]/div[3]/div/div[2]/div[1]/ul/li[3]")
+	@FindBy (xpath="//li[normalize-space()='5M']") 
 	public WebElement size; 
 	
-	@FindBy (xpath="//button[@id='bag-add-1622049']")
+	@FindBy (xpath="//button[@id='bag-add-1797457']")
 	public WebElement addtoBag;
 	
 	@FindBy(xpath="//*[@id=\"onetrust-close-btn-container\"]/button")

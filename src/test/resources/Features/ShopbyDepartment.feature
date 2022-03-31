@@ -7,6 +7,7 @@ Feature: shop by department feather
     When user howver over to women department
     And user selected category dress
     Then user navigated to "https://www.macys.com/shop/womens-clothing/dresses?id=5449&cm_sp=us_hdr-_-women-_-5449_dresses_COL1"
+    
     And user clicks on an item
     And user select the color
     And user selected size

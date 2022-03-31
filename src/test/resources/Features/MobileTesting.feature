@@ -1,23 +1,19 @@
 #Author: Tasmia Chowdhury
 Feature: End to end Mobile Testing
 
-  @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
-
-  @tag2
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+  @chrome
+  Scenario: User should be able logIn, search for an item and successfully able to checkout the item from a Mobile Device
+    Given User is in Macys log in page
+    When User enters a valid eamil and valid password
+    And User clicks on Sign in button
+    Then User is able to successfully login into Macys homepage
+    When hover over to Men from the top menu bar
+    And User clicks on shirts
+    And User Click choose a  desired shirt
+    And User Click on desired color
+    And User Click on desired size
+    And User Click on Add To Bag
+    And User Click on view Bag item
+    And User click on checkout
+    And User enter all valid information
+    Then User able to checkout successfully

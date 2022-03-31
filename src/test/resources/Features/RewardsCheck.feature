@@ -1,25 +1,9 @@
-#Author: Tasmia Chowdhury
+#Author: Atef
+Feature: User should be able to check earned Rewards after logging in with valid Email and Password
 
-
-Feature: User should be able to check earned Rewards after logging in with valid Email and Password 
-
-  @tag1
+  @chrome
   Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
-
-  @tag2
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+    Given User is Logged in into macys's Account
+    And User is in Macys official website
+    When User Clicks on Rewards from top menu bar
+    Then User is able to see User's Star Rewards

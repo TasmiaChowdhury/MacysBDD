@@ -16,6 +16,7 @@ public class AddToCard_actions {
 		element = new AddtoCart_Elements();
 		PageFactory.initElements(SetupDriver.driver, element);
 	}
+	// https://www.macys.com/shop/shoes/high-heels?id=71123&cm_sp=c2_1111US_catsplash_shoes-_-row2-_-image_heels&edge=hybrid
 	public void openShoesPage() {
 		SetupDriver.driver.get("https://www.macys.com/shop/shoes/high-heels?id=71123&cm_sp=c2_1111US_catsplash_shoes-_-row2-_-image_heels&edge=hybrid");
 		SetupDriver.driver.manage().window().maximize();
