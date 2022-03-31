@@ -10,18 +10,18 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import macysBDDElements.ElementsTasmia;
+import macysBDDElements.SignInPage_elements;
 import macysBDDUtilities.Helper;
 import macysBDDUtilities.SetupDriver;;
 
 
 public class Search_actions {
 	
-	ElementsTasmia elementTas;
+	SignInPage_elements element;
 	
 	public Search_actions(){
-		elementTas = new ElementsTasmia();
-		PageFactory.initElements(SetupDriver.driver, elementTas);
+		element = new SignInPage_elements();
+		PageFactory.initElements(SetupDriver.driver, element);
 	}
 	
 	
@@ -30,19 +30,21 @@ public class Search_actions {
 		SetupDriver.driver.get("https://www.macys.com/");
 		SetupDriver.driver.manage().window().maximize();
 		SetupDriver.driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+		SetupDriver.driver.manage().deleteAllCookies();
 		System.out.println("chrome opened for searching item ==>");
 	}
 	
 	public void searchItem(){
-		elementTas.searchBox.clear();
-		elementTas.searchBox.sendKeys("Men's Shirts");
+		element.searchBox.clear();
+		element.searchBox.sendKeys("Men's Shirts");
+		//element.serviceerror.click();
 		
 		
 	}
 	
 	public void clickSearch(){
-		elementTas.searchBox.sendKeys(Keys.ENTER);    
-		
+		element.searchBox.sendKeys(Keys.ENTER);    
+		//element.serviceerror.click();
 		
 		
 	}
