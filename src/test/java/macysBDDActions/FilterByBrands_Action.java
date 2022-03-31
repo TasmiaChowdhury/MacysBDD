@@ -5,10 +5,10 @@ import org.openqa.selenium.support.PageFactory;
 import macysBDDElements.Registration__Elements;
 import macysBDDUtilities.SetupDriver;
 
-public class Brands_Action {
+public class FilterByBrands_Action {
 	Registration__Elements Ruby_elements;
 
-	public Brands_Action() {
+	public FilterByBrands_Action() {
 		Ruby_elements = new Registration__Elements();
 
 		PageFactory.initElements(SetupDriver.driver, Ruby_elements);

@@ -6,12 +6,12 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import macysBDDActions.Brands_Action;
+import macysBDDActions.FilterByBrands_Action;
 import macysBDDActions.EndToEnd_Actions;
 import macysBDDUtilities.Helper;
 
-public class Brands_StepDef {
-	Brands_Action objBrands = new Brands_Action();
+public class FilterByBrand {
+	FilterByBrands_Action objBrands = new FilterByBrands_Action();
 	EndToEnd_Actions eTeActions= new EndToEnd_Actions();
 	
 

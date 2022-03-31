@@ -9,10 +9,10 @@ import org.openqa.selenium.support.ui.Select;
 import macysBDDElements.Wedding_ELements;
 import macysBDDUtilities.SetupDriver;
 
-public class Wedding_Action {
+public class WeddingRegistry_Action {
 	Wedding_ELements object4;
 
-public Wedding_Action(){
+public WeddingRegistry_Action(){
 	object4=new Wedding_ELements();
 	PageFactory.initElements(SetupDriver.driver, object4);
 }

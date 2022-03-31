@@ -6,11 +6,11 @@ import org.testng.Assert;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import macysBDDActions.Wedding_Action;
+import macysBDDActions.WeddingRegistry_Action;
 import macysBDDUtilities.Helper;
 
-public class Wedding_StepDef {
-	Wedding_Action object5=new Wedding_Action();
+public class WeddingRegistry_StepDef {
+	WeddingRegistry_Action object5=new WeddingRegistry_Action();
 	@Given("User is in Macys Wedding and Registry page")
 	public void user_is_in_Macys_Wedding_and_Registry_page() {
 		 object5.get_Weddingpage();
