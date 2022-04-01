@@ -8,7 +8,7 @@ public class EndToEnd_elements {
 	@FindBy(xpath="//*[@id=\"flexid_1\"]/a/span")
 	public WebElement Men;
 	
-	@FindBy(xpath="//*[@id=\"categoryTree\"]/ul/li[4]/div[1]/div/div/ul/li[11]/a")
+	@FindBy(xpath="//div[@class='accordion active']//li[11]//a[1]")
 	public WebElement Shirt;
 	
 	@FindBy(xpath="//*[@id=\"onetrust-close-btn-container\"]/button")
@@ -18,11 +18,11 @@ public class EndToEnd_elements {
 	public WebElement technicalError;
 	
 	
-    @FindBy(xpath="//*[@id=\"img_10678436\"]")
+    @FindBy(xpath="//div[@id='thumbundefined']")
 	public WebElement desired_Shirt;
 	
 	
-	@FindBy(xpath="//img[@alt='Light Blue']")
+	@FindBy(xpath="//img[@alt='Neo Navy']")
 	public WebElement color_black;
 	
 	@FindBy(xpath="//li[normalize-space()='S']")

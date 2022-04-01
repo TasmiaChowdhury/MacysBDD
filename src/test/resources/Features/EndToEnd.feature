@@ -1,6 +1,6 @@
 Feature: End To End feature
 
-  @chrome 
+  @chrome
   Scenario: User should be able to select a shirt based on catagory and able to buy the desired shirt as guest.
     Given User is on Macy's home page.
     When Click on Men

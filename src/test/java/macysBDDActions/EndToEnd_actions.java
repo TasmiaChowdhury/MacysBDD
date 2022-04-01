@@ -2,6 +2,7 @@ package macysBDDActions;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import macysBDDElements.EndToEnd_elements;
@@ -32,18 +33,28 @@ public class EndToEnd_actions {
 
 	public void Click_Shirt() {
 		System.out.println("Clicking on Shirt");
-		elements.Shirt.click();
+		Actions hover = new Actions(SetupDriver.driver);
+		elements.Shirt.isDisplayed();
+		hover.moveToElement(elements.Shirt).click().build().perform();
+		//elements.Shirt.click();
 		// SetupDriver.driver.manage().deleteAllCookies();
 	}
-	
-	public void cookiesHandle(){
+
+	public void cookiesHandle() {
 		elements.cookies.click();
 	}
 
 	public void Click_desired_shirt() {
-		System.out.println("Clicking on desired Shirt");
-		elements.desired_Shirt.click();
-		elements.serviceerror.click();
+		try {
+			Actions hover = new Actions(SetupDriver.driver);
+			elements.desired_Shirt.isDisplayed();
+			hover.moveToElement(elements.desired_Shirt).click().build().perform();
+			// elements.desired_Shirt.click();
+			elements.serviceerror.click();
+		} catch (Exception e) {
+			e.getStackTrace();
+			System.out.println("Item not found, sold out");
+		}
 	}
 
 	public void Click_color_black() {
@@ -61,15 +72,14 @@ public class EndToEnd_actions {
 	public void Click_Add_To_Bag() {
 		System.out.println("Clicking on Add to Bag");
 		elements.Add_To_Bag.click();
-		
 
 	}
-	public void Click_Checkout () {
+
+	public void Click_Checkout() {
 		System.out.println("Clicking on Add to Bag");
 		elements.Checkout.click();
-		//SetupDriver.driver.manage().deleteAllCookies();
+		// SetupDriver.driver.manage().deleteAllCookies();
 
-}
-
+	}
 
 }

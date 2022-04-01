@@ -44,23 +44,25 @@ public class EndToEnd_stepDefinations {
 
 	@And("Click on size S")
 	public void click_on_size_S() {
-		action.Click_size_S();
+		//action.Click_size_S();
 	    
 	}
 
 	@And("Click on Add To Bag")
 	public void click_on_Add_To_Bag() {
-		action.Click_Add_To_Bag();
+		//action.Click_Add_To_Bag();
 	    
 	}
 
 	@And("Click Checkout")
 	public void click_Checkout() {
+		//
 	   
 	}
 
 	@Then("user able to checkout successfully")
 	public void user_able_to_checkout_successfully() {
+		//
 	    
 	}
 

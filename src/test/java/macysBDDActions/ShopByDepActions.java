@@ -35,39 +35,76 @@ public class ShopByDepActions {
 		try {
 			Actions hover = new Actions(SetupDriver.driver);
 			element.hoverovertowomen.isDisplayed();
-			//hover.moveToElement(element.hoverovertowomen).perform();                     //din not work 
+			// hover.moveToElement(element.hoverovertowomen).perform(); //din
+			// not work
 			hover.clickAndHold(element.hoverovertowomen).release().perform();
-			//element.hoverovertowomen.click();
+			// element.hoverovertowomen.click();
 			Thread.sleep(5000);
-			
+
 		} catch (Exception e) {
 			e.getStackTrace();
 
 			System.out.println("failed to hover over");
-			
+
 		}
 
 	}
-	public void cookiesHandle(){
+
+	public void cookiesHandle() {
 		element.cookies.click();
 	}
 
 	public void clickOndress() {
 		try {
 			element.clickonDressess.isDisplayed();
-			
+			Actions dress = new Actions(SetupDriver.driver);
+			element.clickonDressess.isDisplayed();
+			dress.clickAndHold(element.clickonDressess).release().perform();
+
 			element.clickonDressess.click();
-			
 
 		} catch (Exception e) {
 			e.getStackTrace();
-			System.out.println("failed to click on dress due to access denied !!");
+			System.out.println("Item sold out  !!");
 		}
 	}
 
 	public void getURL() {
-		System.out.println("current URL is "+Helper.getCurentUrl());
-		//Helper.getCurentUrl();
+		System.out.println("current URL is " + Helper.getCurentUrl());
+		// Helper.getCurentUrl();
 	}
 
+	public void selectaDress() {
+		element.selectDress.isDisplayed();
+		element.selectDress.click();
+	}
+
+	public void dressColor() {
+		element.chooseColor.click();
+	}
+
+	public void dressSize() {
+		try {
+			Actions color = new Actions(SetupDriver.driver);
+			color.clickAndHold(element.chooseColor).click().build().perform();
+			// element.ChooseSize.click();
+
+		} catch (Exception e) {
+			e.getStackTrace();
+			System.out.println("color is sold out !!");
+
+		}
+		
+			
+		}public void addInBag(){
+		try{
+			element.addToBag.click();
+		}
+		catch (Exception e) {
+			e.getStackTrace();
+			System.out.println(" Access denied by macys website !!");
+
+		}
+
+	}
 }
