@@ -32,10 +32,15 @@ public class EndToEnd_actions {
 	}
 
 	public void Click_Shirt() {
-		System.out.println("Clicking on Shirt");
+		try{System.out.println("Clicking on Shirt");
 		Actions hover = new Actions(SetupDriver.driver);
 		elements.Shirt.isDisplayed();
-		hover.moveToElement(elements.Shirt).click().build().perform();
+		hover.moveToElement(elements.Shirt).click().build().perform();}
+		
+		catch (Exception e) {
+			e.getStackTrace();
+			System.out.println("Item not found, sold out");}
+		
 		//elements.Shirt.click();
 		// SetupDriver.driver.manage().deleteAllCookies();
 	}

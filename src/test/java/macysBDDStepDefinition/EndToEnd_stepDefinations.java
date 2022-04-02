@@ -38,7 +38,13 @@ public class EndToEnd_stepDefinations {
 
 	@And("Click color black")
 	public void click_color_black() {
-		action.Click_color_black();
+		try{
+			action.Click_color_black();
+			}
+		 catch (Exception e) {
+			e.getStackTrace();
+			System.out.println("Item not found, sold out");
+		}
 	    
 	}
 
