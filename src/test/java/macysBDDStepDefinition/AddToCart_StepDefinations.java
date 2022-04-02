@@ -53,7 +53,13 @@ public class AddToCart_StepDefinations {
 
 	@And("User Clicks on Add to bag")
 	public void user_Clicks_on_Add_to_bag() {
-		action.addToBag();
+		try{action.addToBag();
+		
+		}catch (Exception e) {
+			e.getStackTrace();
+			System.out.println("access denied ");
+		}
+
 
 	}
 
