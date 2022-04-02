@@ -36,7 +36,7 @@ public class Search_actions {
 	
 	public void searchItem(){
 		element.searchBox.clear();
-		element.searchBox.sendKeys("Men's Shirts");
+		element.searchBox.sendKeys("perfums ");
 		//element.serviceerror.click();
 		
 		

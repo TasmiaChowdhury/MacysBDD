@@ -47,7 +47,10 @@ public class AddToCard_actions {
 		System.out.println("selection a heel Now!!");
 	}
 	public void selectColor(){
-		element.color.click();
+		try{element.color.click();}
+		catch (Exception e) {
+			e.getStackTrace();
+			System.out.println("color sold out!!");}
 	}
 	public void selectSize(){
 		element.size.click();

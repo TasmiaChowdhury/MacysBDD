@@ -28,7 +28,7 @@ public class SignInPage_elements {
 	@FindBy(xpath="//button[@aria-label='Open Women flyout' and @class=\"show-for-sr\"]")           //span[normalize-space()='Women']
 	public WebElement hoverovertowomen;
 	
-	@FindBy(xpath="//img[@alt='Tops' and @class=\"img-adaptive stretch lazy loading\"]")
+	@FindBy(xpath="//div[@class='accordion-body-wrapper initial']//a[contains(text(),'Dresses')]")
 	public WebElement clickonDressess;
 	
 	

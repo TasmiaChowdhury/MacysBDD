@@ -59,9 +59,10 @@ public class ShopByDepActions {
 			element.clickonDressess.isDisplayed();
 			Actions dress = new Actions(SetupDriver.driver);
 			element.clickonDressess.isDisplayed();
-			dress.clickAndHold(element.clickonDressess).release().perform();
+			// dress.clickAndHold(element.clickonDressess).release().perform();
+			dress.moveToElement(element.clickonDressess).click().build().perform();
 
-			element.clickonDressess.click();
+			//element.clickonDressess.click();
 
 		} catch (Exception e) {
 			e.getStackTrace();
@@ -75,8 +76,15 @@ public class ShopByDepActions {
 	}
 
 	public void selectaDress() {
-		element.selectDress.isDisplayed();
-		element.selectDress.click();
+		try{element.selectDress.isDisplayed();
+		element.selectDress.click();}
+		
+		catch (Exception e) {
+			e.getStackTrace();
+			System.out.println("Access Denied  !!");
+
+		}
+		
 	}
 
 	public void dressColor() {

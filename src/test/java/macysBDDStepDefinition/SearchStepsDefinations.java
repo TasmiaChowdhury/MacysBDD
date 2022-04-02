@@ -34,7 +34,7 @@ public class SearchStepsDefinations {
 	public void user_is_navigated_to_search_result(String string) {
 		
 		String actualTitle = Helper.getPageTitle();
-		String expectedTitle = "Men's shirt";
+		String expectedTitle = "perfumes-Macy's";
 		assertEquals(expectedTitle,actualTitle);
 		
 	    
